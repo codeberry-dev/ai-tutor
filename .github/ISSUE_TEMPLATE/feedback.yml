@@ -1,0 +1,57 @@
+name: 利用フィードバック
+description: 使ってみた感想や学習体験を共有
+title: "[体験] "
+body:
+  - type: markdown
+    attributes:
+      value: 公開Issueです。顧客コード・非公開PR URL・個人情報・認証情報を貼らず、架空の再現例を使ってください。文章だけでも歓迎です。
+  - type: input
+    id: version
+    attributes:
+      label: 利用した版
+      placeholder: v0.1.0 またはコミットID
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: AI環境・モデル
+      placeholder: VS Code / Copilot / モデル名 / アプリの版。不明なら不明と記載
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 利用モード
+      options:
+        - セルフ家庭教師
+        - レビュー支援
+        - 導入・初期設定
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: 状況・実際の動作
+      description: 何をし、どう返ってきたか。公開可能な範囲で短く記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作・改善案
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: 架空の再現例（任意）
+      description: 入力例・短い出力例・再現手順。実案件からの貼り付けは不要です。
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: 公開内容の確認
+      options:
+        - label: 顧客情報・非公開URL・個人情報・認証情報を含めていません
+          required: true
