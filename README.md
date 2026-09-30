@@ -19,11 +19,13 @@
 
 | 環境 | 配布ファイル | 初回準備・呼び出し |
 |---|---|---|
-| Codex | [Skillフォルダ](skills/ai-tutor/SKILL.md) | `.agents/skills/ai-tutor/`へコピー。`$ai-tutor`＋対象を指定 |
-| Claude Code | 同じSkillフォルダ | `.claude/skills/ai-tutor/`へコピー。`/ai-tutor`＋対象を指定 |
+| Codex | [SKILL.md](skills/ai-tutor/SKILL.md) | `.agents/skills/ai-tutor/SKILL.md`として配置。`$ai-tutor`＋対象を指定 |
+| Claude Code | [SKILL.md](skills/ai-tutor/SKILL.md) | `.claude/skills/ai-tutor/SKILL.md`として配置。`/ai-tutor`＋対象を指定 |
 | CopilotのPrompt file対応環境 | [Prompt file](prompts/copilot/ai-tutor.prompt.md) | `.github/prompts/`へコピー。対応チャットで`/ai-tutor` |
 | Web UI | [初期設定プロンプト](prompts/web/ai-tutor.webui.md) | 新しいチャットで全文を一度送信。その後`AI家庭教師` |
 | ファイル配置ができない環境 | [最小プロンプト](prompts/ai-tutor-minimal.txt) | 許可された対象と一緒に毎回貼り付け |
+
+Codex・Claude Codeでは、利用するプロジェクトのルートに上記の配置先フォルダを作成し、リンク先のファイルを`SKILL.md`という名前で保存してください。両環境で同じファイルを使います。
 
 詳細な手順と対応環境の注意は[導入ガイド](docs/installation.md)を参照してください。初回は[架空のサンプルPR](examples/sample-pr.md)で試せます。
 
