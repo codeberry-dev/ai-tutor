@@ -34,7 +34,7 @@ README、MIT、導入手順、貢献ガイド、保守手順、Issueフォーム
 - GitHub CLIの認証は有効。所属Organizationとして`codeberry-dev`を確認し、認証ユーザーは同Organizationのactiveなadmin。Publicリポジトリ作成を許可する設定も確認。
 - 作成直前に既存リポジトリがないことを確認し、[Publicリポジトリ](https://github.com/codeberry-dev/ai-tutor)を作成。IssuesとActionsは有効。運用ラベル5種を確認。
 - 初回[Validate CI](https://github.com/codeberry-dev/ai-tutor/actions/runs/36686265493)は成功。mainの直接push制限は未設定。
-- 初回Releaseは対話評価待ちのドラフトを準備する。公開タグとReleaseの公開はまだ行わない。
+- 初回Releaseは対話評価待ちの[ドラフト](https://github.com/codeberry-dev/ai-tutor/releases/tag/untagged-359a3678448d21cc04a4)を作成済み。公開タグとReleaseの公開はまだ行わない。
 - ユーザーが公開先`codeberry-dev/ai-tutor`とMITの`Copyright (c) 2026 Codeberry`を承認。Author／Committerは`SATOSHI CHIBA <satoshi.chiba@codeberry.co.jp>`と指定。
 - `evals/scenarios.md`と架空教材の内容を確認。実際のAI環境での対話評価は未実施であり、静的チェック成功を学習効果の根拠とはしない。
 
