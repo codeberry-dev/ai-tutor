@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="assets/icon.png" alt="笑顔の吹き出しに黄色い栞を添えたAI家庭教師のアイコン" width="160" height="160">
-</p>
-
-# AI家庭教師
+# <img src="assets/icon.png" alt="" width="64" height="64" align="absmiddle"> AI家庭教師
 
 **AIに作ってもらったら、次は「AI家庭教師」。**
 
