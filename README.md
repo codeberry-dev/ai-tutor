@@ -39,7 +39,7 @@ Codex・Claude Codeでは、利用するプロジェクトのルートに上記�
 
 困った動作、学習体験、改善案はGitHubのIssuesから投稿できます。利用した版、AI環境・モデル、モード、期待と実際の差を記録してください。コードや会話は公開可能な架空の再現例を使います。実案件のコード・非公開PR URL・社名・個人情報・認証情報を貼らないでください。
 
-投稿方法は[CONTRIBUTING.md](CONTRIBUTING.md)、改善の回し方は[保守ガイド](docs/maintenance.md)、引き継ぎは[HANDOVER.md](HANDOVER.md)に記載しています。
+投稿方法は[CONTRIBUTING.md](CONTRIBUTING.md)、改善の回し方は[保守ガイド](docs/maintenance.md)に記載しています。
 
 ## 開発
 

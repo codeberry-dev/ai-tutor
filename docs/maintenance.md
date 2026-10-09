@@ -10,7 +10,7 @@
 6. 実際のAIで評価シナリオを実行し、初回リリースの根拠を記録する。
 7. `v0.1.0`タグとReleaseを作り、使い方・既知の制約・配布物へのリンクを掲載する。
 
-公開先は[codeberry-dev/ai-tutor](https://github.com/codeberry-dev/ai-tutor)です。`VERSION`は初回候補の0.1.0で、Release公開は対話評価後に行います。現在の状態は[HANDOVER.md](../HANDOVER.md)を確認してください。
+公開先は[codeberry-dev/ai-tutor](https://github.com/codeberry-dev/ai-tutor)です。`VERSION`は初回候補の0.1.0で、Release公開は対話評価後に行います。公開・Releaseの現在の状態はGitHubのリポジトリとReleasesを確認してください。
 
 ## Issue→改善→配布
 

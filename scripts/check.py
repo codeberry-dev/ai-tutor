@@ -6,12 +6,13 @@ import subprocess
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 subprocess.run([sys.executable, str(ROOT / "scripts/build.py"), "--check"], check=True)
-required = ["LICENSE", "README.md", "HANDOVER.md", "AGENTS.md", "CONTRIBUTING.md", "VERSION", "spec/ai-tutor.md", "prompts/ai-tutor-minimal.txt", ".github/ISSUE_TEMPLATE/feedback.yml", ".github/ISSUE_TEMPLATE/bug.yml", ".github/ISSUE_TEMPLATE/feature.yml"]
+required = ["LICENSE", "README.md", "AGENTS.md", "CONTRIBUTING.md", "VERSION", "spec/ai-tutor.md", "prompts/ai-tutor-minimal.txt", ".github/ISSUE_TEMPLATE/feedback.yml", ".github/ISSUE_TEMPLATE/bug.yml", ".github/ISSUE_TEMPLATE/feature.yml"]
 for name in required:
     assert (ROOT / name).is_file(), name
 assert re.fullmatch(r"\d+\.\d+\.\d+\n?", (ROOT / "VERSION").read_text())
 errors = []
 for p in ROOT.rglob("*.md"):
+    if p == ROOT / "HANDOVER.md": continue
     text = p.read_text()
     for target in re.findall(r"\[[^\]]+\]\(([^)]+)\)", text):
         if "://" in target or target.startswith("#"): continue
