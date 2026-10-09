@@ -11,8 +11,10 @@ for name in required:
     assert (ROOT / name).is_file(), name
 assert re.fullmatch(r"\d+\.\d+\.\d+\n?", (ROOT / "VERSION").read_text())
 errors = []
-for p in ROOT.rglob("*.md"):
-    if p == ROOT / "HANDOVER.md": continue
+tracked = subprocess.check_output(["git", "ls-files", "-z", "--", "*.md"], cwd=ROOT).decode().split("\0")
+for name in filter(None, tracked):
+    p = ROOT / name
+    if not p.is_file(): continue
     text = p.read_text()
     for target in re.findall(r"\[[^\]]+\]\(([^)]+)\)", text):
         if "://" in target or target.startswith("#"): continue
